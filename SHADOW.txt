@@ -1,0 +1,4 @@
+shadow prebuilt repo: skia (target)
+  upstream: external/skia
+  api-level: 34 (branch 34-20261024)
+  date: 2026-10-24

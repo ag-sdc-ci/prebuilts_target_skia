@@ -1,0 +1,61 @@
+package {
+    default_applicable_licenses: ["external_skia_license"],
+}
+
+license {
+    name: "external_skia_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-BSD",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_prebuilt_library_static {
+    name: "libskia",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    export_include_dirs: [
+        "include/android",
+        "include/c",
+        "include/codec",
+        "include/config",
+        "include/core",
+        "include/docs",
+        "include/effects",
+        "include/encode",
+        "include/gpu",
+        "include/pathops",
+        "include/ports",
+        "include/svg",
+        "include/utils",
+    ],
+    srcs: ["lib/libskia.a"],
+}
+
+cc_prebuilt_library_static {
+    name: "libskia_renderengine",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    export_include_dirs: [
+        "include/android",
+        "include/c",
+        "include/codec",
+        "include/config",
+        "include/core",
+        "include/docs",
+        "include/effects",
+        "include/encode",
+        "include/gpu",
+        "include/pathops",
+        "include/ports",
+        "include/svg",
+        "include/utils",
+    ],
+    srcs: ["lib/libskia_renderengine.a"],
+}
