@@ -59,3 +59,7 @@ cc_prebuilt_library_static {
     ],
     srcs: ["lib/libskia_renderengine.a"],
 }
+
+cc_defaults {
+    name: "skia_renderengine_deps",
+}
