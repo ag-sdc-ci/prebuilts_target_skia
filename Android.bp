@@ -63,3 +63,7 @@ cc_prebuilt_library_static {
 cc_defaults {
     name: "skia_renderengine_deps",
 }
+
+cc_defaults {
+    name: "skia_deps",
+}
